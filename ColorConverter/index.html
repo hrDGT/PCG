@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script> 
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Преобразование моделей</h1>
+    <p class="warning">Выход за границы! Возможны неточные значения.</p>
+    <div class="column">
+      <div class="row">
+        <div class="item">
+          <p>RGB</p>
+          <div id="rgb">
+            <div class="inputs">
+              <input type="text" id="rgb_r", value="0">
+              <input type="range" id="rgb_r_slider" min="0" max="255" value="0">
+            </div>
+            <div class="inputs">
+              <input type="text" id="rgb_g", value="0">
+              <input type="range" id="rgb_g_slider" min="0" max="255" value="0">
+            </div>
+            <div class="inputs">
+              <input type="text" id="rgb_b", value="0">
+              <input type="range" id="rgb_b_slider" min="0" max="255" value="0">
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <p>LAB</p>
+          <div id="lab">
+            <div class="inputs">
+              <input type="text" id="lab_l", value="0.00">
+              <input type="range" id="lab_l_slider" min="0" max="100" step="0.01" value="0">
+            </div>
+            <div class="inputs">
+              <input type="text" id="lab_a", value="0.00">
+              <input type="range" id="lab_a_slider" min="-128" max="127" step="0.01" value="0">
+            </div>
+            <div class="inputs">
+              <input type="text" id="lab_b", value="0.00">
+              <input type="range" id="lab_b_slider" min="-128" max="127" step="0.01" value="0">
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <p>CMYK</p>
+          <div id="cmyk"> 
+            <div class="inputs">
+              <input type="text" id="cmyk_c", value="0.00">
+              <input type="range" id="cmyk_c_slider" min="0" max="1" step="0.01" value="0">
+            </div>
+            <div class="inputs">
+              <input type="text" id="cmyk_m", value="0.00">
+              <input type="range" id="cmyk_m_slider" min="0" max="1" step="0.01" value="0">
+            </div>
+            <div class="inputs">
+              <input type="text" id="cmyk_y", value="0.00">
+              <input type="range" id="cmyk_y_slider" min="0" max="1" step="0.01" value="0">
+            </div>
+            <div class="inputs">
+              <input type="text" id="cmyk_k", value="0.00">
+              <input type="range" id="cmyk_k_slider" min="0" max="1" step="0.01" value="0">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="palette_title">Палитра</p>
+        <input type="color" id="palette">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
